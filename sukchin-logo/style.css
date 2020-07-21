@@ -1,0 +1,118 @@
+.motion {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	max-width: 600px;
+	max-height: 600px;
+}
+.line-top {
+	position: absolute;
+	bottom: 50%;
+	left: 0;
+	right: 0;
+	width: 4px;
+	height: 70%;
+	transform-origin: 50% 100%;
+	background: #ccc;
+	margin: auto;
+	transform: translateY(-100%);
+}
+.shape {
+	position: absolute;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	opacity: 0;
+}
+.rectangle {
+	height: 50px;
+	border: 2px solid lightsteelblue;
+}
+.circle3 {
+	height: 50px;
+	border: 2px solid lightsteelblue;
+	border-radius: 50%;
+}
+.circle {
+	position: absolute;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	border: 70px solid peachpuff;
+	left: -100px;
+	right: -100px;
+	top: -100px;
+	bottom: -100px;
+	margin: auto;
+	opacity: 0;
+}
+.circle2 {
+	width: 300px;
+	height: 300px;
+}
+.glitter {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 2px;
+	background: peachpuff;
+	transform-origin: 0px 1px;
+}
+.logo {
+	position: absolute;
+	width: 295px;
+	height: 50px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	font-size: 0px;
+	overflow: hidden;
+}
+.character {
+	position: relative;
+	display: inline-block;
+	width: 35px;
+	height: 50px;
+	overflow: hidden;
+	text-align: center;
+}
+.character span {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 50px;
+	text-align: center;
+	color: peru;
+	font-size: 40px;
+	font-weight: 300;
+	z-index: 4;
+}
+.character.s {
+	transform-origin: 0%;
+	/* background: #333; */
+	color: white;
+	width: 50px;
+}
+.character .s-back {
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	background: darkslategray;
+	transform-origin: 0;
+}
+.character .back1 {
+	top: 0;
+}
+.character .back2 {
+	bottom: 0;
+}
