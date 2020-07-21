@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  <link rel="stylesheet" href="./sukchin-logo/style.css">
+  <link rel="stylesheet" type="text/css" href="./sukchin-logo/tree/tree.css" />
+  <style>
+    div, p {font-family: roboto;}
+
+    .flex-container {
+      display: flex;
+      background-color: transparent;
+      justify-content: flex-end;
+    }
+
+    .flex-container > div {
+      background-color: #f1f1f1;
+      margin: 10px;
+      padding: 20px;
+      font-size: 30px;
+      width="30%";
+    }
+  </style>
+
+</head>
+<body>
+<h1 style="text-align: center;color: burlywood;">Hello, Welcome to My Page</h1>
+<div>
+<!-- partial:index.partial.html -->
+<div class="line-top"></div>
+<div class="shape rectangle"></div>
+<div class="shape triangle" data-stroke="#ccc" data-stroke-width="2px"></div>
+<div class="shape circle3"></div>
+<div class="shape star5" data-side="5" data-stroke="#ccc" data-stroke-width="2px" data-star-radius="50%"></div>
+<div class="shape polygon6" data-side="6" data-stroke="#ccc" data-stroke-width="2px"></div>
+
+<div class="motion">
+  <div class="glitter glitter1"></div>
+  <div class="glitter glitter2"></div>
+  <div class="glitter glitter3"></div>
+  <div class="glitter glitter4"></div>
+  <div class="glitter glitter5"></div>
+  <div class="glitter glitter6"></div>
+  <div class="glitter glitter7"></div>
+  <div class="glitter glitter8"></div>
+  <div class="circle circle1"></div>
+  <div class="circle circle2"></div>
+</div>
+<div class="logo">
+  <div class="character s">
+    <div class="s-back back1"></div>
+    <div class="s-back back2"></div>
+    <span>S</span>
+  </div>
+  <div class="character u"><span>U</span></div>
+  <div class="character k"><span>K</span></div>
+  <div class="character c"><span>C</span></div>
+  <div class="character h"><span>H</span></div>
+  <div class="character i"><span>I</span></div>
+  <div class="character n"><span>N</span></div>
+</div>
+
+<div class="flex-container">
+    <a href="./biodata/biodata.html" style="margin-top:2em; margin-right: 4em; padding:0.5em 1.5em; background-color: blanchedalmond ; box-shadow: 2px 2px 5px chocolate; ">Next</a>
+  </div>
+
+<div>
+<canvas id="canvastree"></canvas>
+    <script type="text/javascript" src="./sukchin-logo/tree/tree.js"></script></div>
+
+
+
+</div>
+
+<script src='sukchin-logo/library/scene.js'></script>
+<script src='sukchin-logo/shape.js'></script>
+<script src='sukchin-logo/scene.js'></script><script  src="./sukchin-logo/script.js"></script>
+<!-- partial -->
+
+</div>
+
+<script>
+particlesJS("particles-js", {
+    "particles": {
+        "number": {
+            "value": 400,
+            "density": {
+                "enable": true,
+                "value_area": 800
+            }
+        },
+        "color": {
+            "value": "#ffffff"
+        },
+        "shape": {
+            "type": "image",
+            "stroke": {
+                "width": 3,
+                "color": "#fff"
+            },
+            "polygon": {
+                "nb_sides": 5
+            },
+            "image": {
+                "src": "images/snowflakes.png",
+                "width": 100,
+                "height": 100
+            }
+        },
+        "opacity": {
+            "value": 0.7,
+            "random": false,
+            "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+            }
+        },
+        "size": {
+            "value": 5,
+            "random": true,
+            "anim": {
+                "enable": false,
+                "speed": 20,
+                "size_min": 0.1,
+                "sync": false
+            }
+        },
+        "line_linked": {
+            "enable": false,
+            "distance": 50,
+            "color": "#ffffff",
+            "opacity": 0.6,
+            "width": 1
+        },
+        "move": {
+            "enable": true,
+            "speed": 5,
+            "direction": "bottom",
+            "random": true,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+                "enable": true,
+                "rotateX": 300,
+                "rotateY": 1200
+            }
+        }
+    },
+    "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {
+                "enable": true,
+                "mode": "bubble"
+            },
+            "onclick": {
+                "enable": true,
+                "mode": "repulse"
+            },
+            "resize": true
+        },
+        "modes": {
+            "grab": {
+                "distance": 150,
+                "line_linked": {
+                    "opacity": 1
+                }
+            },
+            "bubble": {
+                "distance": 200,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+            },
+            "repulse": {
+                "distance": 200,
+                "duration": 0.2
+            },
+            "push": {
+                "particles_nb": 4
+            },
+            "remove": {
+                "particles_nb": 2
+            }
+        }
+    },
+    "retina_detect": true
+});
+</script>
+
+
+
+</body>
+</html>
